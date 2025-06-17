@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Helyio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="full-screen-container">
+
+        <header class="agent-identity-communications">
+            <div class="header-left">
+                <img src="assets/pp.jpg" alt="Photo de Profil Agent" class="profile-pic-agent">
+                <div class="agent-info">
+                    <h1 class="agent-name"><span class="accent-color">Helyio</span></h1>
+                </div>
+            </div>
+
+            <div class="hud-panel social-panel-header">
+                <h3 class="panel-title">Communications</h3>
+                <div class="social-links-grid-hud">
+                    <a href="https://discordapp.com/users/1372225201210789899" target="_blank" title="Discord"><i class="fab fa-discord social-icon-hud"></i></a>
+                    <a href="https://www.instagram.com/shoirakan" target="_blank" title="Instagram"><i class="fab fa-instagram social-icon-hud"></i></a>
+                    <a href="https://github.com/helyio-dev" target="_blank" title="GitHub"><i class="fab fa-github social-icon-hud"></i></a>
+                    <a href="https://tipeee.com/404" target="_blank" title="Tipeee"><i class="fas fa-mug-hot social-icon-hud"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-hud-layout">
+
+            <div id="discord-section" class="hud-panel discord-panel">
+                <h3 class="panel-title">Relais communautaire</h3>
+                <p class="discord-tagline-hud">statut du serveur : RELAIS STABILISÉ</p>
+                <div id="discord-widget-container" class="discord-widget-container-hud">
+                    <a href="https://discord.gg/XcGcP8MZcP" target="_blank" class="discord-invite-button">
+                        <i class="fab fa-discord discord-icon-placeholder"></i>
+                        <p>REJOINDRE LE SERVEUR</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="github-activity" class="hud-panel github-panel">
+                <h3 class="panel-title">Journal d'Opérations</h3>
+                <div id="github-content" class="github-content-hud">
+                    <div class="github-placeholder">
+                        <i class="fab fa-github github-icon-placeholder"></i>
+                        <p>Accès au journal des opérations.<br>Données en attente de configuration.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/helyio-dev?tab=repositories" target="_blank" class="hud-button">ACCÉDER AUX ARCHIVES COMPLÈTES</a>
+            </div>
+
+            <div id="about-me" class="hud-panel about-panel">
+                <h3 class="panel-title">Briefing agent</h3>
+                
+                <div class="stats-summary-hud">
+                    <div class="stat-item-inline">
+                        <i class="fas fa-project-diagram stat-icon-inline"></i>
+                        <span class="stat-value-inline" id="github-repos-count" data-target="0">0</span>
+                        <span class="stat-label-inline">Projets</span>
+                    </div>
+                    <div class="stat-item-inline">
+                        <i class="fas fa-users stat-icon-inline"></i>
+                        <span class="stat-value-inline" id="github-followers-count" data-target="0">0</span>
+                        <span class="stat-label-inline">Abonnés</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
